@@ -1,0 +1,42 @@
+{
+  "name": "mvc",
+  "version": "0.0.1",
+  "description": "An electron-nuxt project",
+  "main": "./dist/main/index.js",
+  "scripts": {
+    "dev": "cross-env-shell NODE_ENV=development node .electron-nuxt/index.js",
+    "build": "cross-env-shell NODE_ENV=production node .electron-nuxt/index.js",
+    "test": "",
+    "postinstall": "electron-builder install-app-deps "
+  },
+  "keywords": [],
+  "author": "kirill <alaevka@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/michalzaq12/electron-nuxt/blob/master/README.md",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.2.0",
+    "@xpda-dev/core": "^0.1.5",
+    "@xpda-dev/electron-builder": "^0.1.1",
+    "@xpda-dev/electron-launcher": "^0.1.1",
+    "@xpda-dev/webpack-step": "^0.1.2",
+    "browser-env": "3.3.0",
+    "cross-env": "6.0.3",
+    "deepmerge": "4.2.2",
+    "electron": "5.0.10",
+    "electron-builder": "22.2.0",
+    "electron-debug": "3.0.1",
+    "element-ui": "2.13.0",
+    "nuxt": "2.10.2",
+    "vue-devtools": "5.1.3",
+    "webpack": "4.41.4",
+    "webpack-node-externals": "1.7.2"
+  },
+  "dependencies": {
+    "vue-gallery": "^2.0.1",
+    "vue-gallery-slideshow": "^1.5.0",
+    "vue-runtime-helpers": "^1.1.2"
+  }
+}
